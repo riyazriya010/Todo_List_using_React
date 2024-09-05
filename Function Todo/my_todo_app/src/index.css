@@ -1,0 +1,114 @@
+body {
+  background-color: hsl(210, 22%, 22%);
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png'), linear-gradient(hsla(210, 22%, 22%, 0.9), hsla(210, 22%, 22%, 0.9));
+  background-size: 100%; /* Increase the size of the background pattern */
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.to-do-list {
+  text-align: center;
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+h1 {
+  font-size: 3.5rem;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  width: 70%;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  color: hsl(0, 0%, 20%);
+}
+
+button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-button {
+  background-color: hsl(0, 0%, 0%);
+}
+
+.add-button:hover {
+  background-color: hsl(120, 2%, 63%);
+  transform: scale(1.05);
+}
+
+.delete-button {
+  background-color: hsl(214, 25%, 43%);
+}
+
+.delete-button:hover {
+  background-color: hsl(214, 27%, 28%);
+  transform: scale(1.05);
+}
+
+.edit-button {
+  background-color: hsl(210, 96%, 47%);
+}
+
+.edit-button:hover {
+  background-color: hsl(210, 86%, 32%);
+  transform: scale(1.05);
+}
+
+ol {
+  padding: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+
+li {
+  font-size: 1.8rem;
+  padding: 15px;
+  /* background-color: hsl(0, 0%, 95%); */
+  background-color: hsl(198, 58%, 75%);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: hsl(198, 67%, 60%);
+}
+
+.text {
+  flex-grow: 1;
+  text-align: left;
+  margin-right: 10px;
+  color: hsl(0, 0%, 20%);
+}
+
+.edit-button, .delete-button {
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+.edit-button:hover, .delete-button:hover {
+  transform: scale(1.05);
+}

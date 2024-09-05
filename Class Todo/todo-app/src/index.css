@@ -1,0 +1,130 @@
+/* Global styles */
+body {
+    background-color: #1c1e21;
+    background-image: linear-gradient(to bottom right, #2a2d31, #1c1e21);
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+/* Main container styling */
+.to-do-list {
+    text-align: center;
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #292b2f;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading style */
+h1 {
+    font-size: 2.8rem;
+    color: #00d1b2;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Input field styles */
+input[type="text"] {
+    font-size: 1.2rem;
+    padding: 12px;
+    width: 70%;
+    border: 1px solid #00d1b2;
+    border-radius: 8px;
+    background-color: #222426;
+    color: #fff;
+    outline: none;
+    margin-right: 10px;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #00d1b2;
+}
+
+/* Button styling */
+button {
+    font-size: 1.2rem;
+    padding: 12px 16px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+/* Add button styling */
+.add-button {
+    background-color: #00d1b2;
+}
+
+.add-button:hover {
+    background-color: #00bfa0;
+    transform: translateY(-2px);
+}
+
+/* Delete button styling */
+.delete-button {
+    background-color: #ff3860;
+}
+
+.delete-button:hover {
+    background-color: #ff1f4d;
+    transform: translateY(-2px);
+}
+
+/* Edit button styling */
+.edit-button {
+    background-color: #3273dc;
+}
+
+.edit-button:hover {
+    background-color: #2768b5;
+    transform: translateY(-2px);
+}
+
+/* List container */
+ol {
+    padding: 0;
+    list-style: none;
+    margin-top: 30px;
+}
+
+/* List item styling */
+li {
+    font-size: 1.4rem;
+    padding: 15px 20px;
+    background-color: #2f3237;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #383b40;
+}
+
+/* Task text styling */
+.text {
+    flex-grow: 1;
+    text-align: left;
+    color: #f5f5f5;
+}
+
+/* Edit and Delete button sizes */
+.edit-button, .delete-button {
+    font-size: 1rem;
+    padding: 8px 12px;
+    margin-left: 10px;
+}
+
+/* Hover effect for buttons inside list items */
+.edit-button:hover, .delete-button:hover {
+    transform: translateY(-2px);
+}
